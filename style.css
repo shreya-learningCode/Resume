@@ -1,0 +1,178 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Resume Container */
+.resume {
+  max-width: 1000px;
+  margin: 30px auto;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+/* Header Section */
+header {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  color: #fff;
+  padding: 25px;
+}
+
+header h1 {
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+header h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #f1c40f;
+}
+
+header .summary {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ecf0f1;
+}
+
+.header-right h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #f1c40f;
+}
+
+.header-right p {
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+.header-right i {
+  margin-right: 8px;
+  color: #f39c12;
+}
+
+/* Content Section */
+.content {
+  display: flex;
+  padding: 20px;
+}
+
+/* Left Column */
+.left {
+  width: 50%;
+  padding-right: 20px;
+  border-right: 2px solid #ddd;
+}
+
+.left section {
+  margin-bottom: 25px;
+}
+
+.left h2 {
+  font-size: 18px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #f39c12;
+  display: inline-block;
+  padding-bottom: 3px;
+}
+
+.left h3 {
+  font-size: 16px;
+  color: #34495e;
+  margin: 8px 0;
+}
+
+.left ul {
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+/* Right Column */
+.right {
+  width: 50%;
+  padding-left: 20px;
+}
+
+.right section {
+  margin-bottom: 25px;
+}
+
+.right h2 {
+  font-size: 18px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #f39c12;
+  display: inline-block;
+  padding-bottom: 3px;
+}
+
+.right ul, .right ol {
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+/* Strengths & Hobbies Icons */
+.left ul li, .right ul li {
+  margin-bottom: 6px;
+}
+
+/* Declaration Section */
+.declaration {
+  margin-top: 40px;
+  padding: 25px;
+  background: #fdfdfd;
+  border-left: 6px solid #f39c12;
+  border-radius: 6px;
+}
+
+.declaration h2 {
+  font-size: 22px;   /* Heading ko bada kiya */
+  color: #2c3e50;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #f39c12;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.declaration p {
+  font-size: 16px;   /* Text ko bada kiya */
+  font-style: italic;
+  color: #444;
+  line-height: 1.8;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+  .left, .right {
+    width: 100%;
+    border: none;
+    padding: 0;
+  }
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .header-right {
+    margin-top: 20px;
+  }
+}
